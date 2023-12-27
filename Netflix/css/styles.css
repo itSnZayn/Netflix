@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+
+html {
+    margin: 0;
+    font-size: 62.5%;
+}
+body {
+    background: rgb(0, 0, 0);
+    color:white;
+}
+
+header {
+    background-image: url("../img/netlix-land-page.jpg");
+    background-color: black;
+    padding-bottom: 1px;
+}
+
+a {
+    font-size:5rem;
+    font-weight: bolder;
+    color: #fe0000;
+}
+
+ul,
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul {
+    padding: 15px 30px 0 50px;
+}
+
+.lang {
+    margin: 0 10px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    background-color:rgba(0, 0, 0, .5);
+    border-color:rgb(255, 255 , 255);
+    color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-radius: 5px;
+    
+}
+
+option {
+    background: rgba(244, 244, 244, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+.signIn {
+    width: 65px;
+    height: 30px;
+    background-color: #C11119;
+    color:white;
+    border-radius: 5px;
+
+}
+ .signIn:hover,
+ .submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(111, 29, 29);
+ }
+
+
+.main-container {
+    margin: 350px 0 300px 350px;
+}
+
+.title {
+    color: white;
+    padding: 10px 0 0 0;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.pricephrase {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.membership {
+    margin: 40px 0 0 0;
+}
+
+.membership > h2 {
+    color:rgb(255, 255, 255);
+}
+
+#email {
+    width: 395px;
+    height:50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-color:rgb(255, 255 , 255);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.submit-btn {
+    width: 200px;
+    height:50px;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #C11119;
+    color:white;
+}
+
+.containerPlans {
+    margin: 0 0 0 350px;
+}
+
+.plans {
+    display: flex;
+}
+
+
+.planText {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3em;
+}
+
+
+.basic,
+.standard,
+.premium {
+    color: white;
+    background: linear-gradient( to bottom, rgb(103, 23, 55), rgb(34, 25, 27));
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 50px 30px;
+    margin: 0 20px 0 0;
+}
+
+.movies {
+    margin: 0 0 0 20px;
+}
+
+.containerShows {
+    margin: 75px 0 0 350px;
+}
+
+.listBox {
+    display:flex;
+    justify-content:left;
+    margin: 30px 0 0 0;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+.shows {
+    color: rgb(255, 252, 252);
+}
+
+.show-btn {
+    border-radius: 20px;
+    background: black;
+}
+
