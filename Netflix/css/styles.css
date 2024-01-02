@@ -6,46 +6,38 @@
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
 }
-
-html {
-    margin: 0;
-    font-size: 62.5%;
-}
 body {
     background: rgb(0, 0, 0);
     color:white;
+    margin: 0;
+    font-size: 62.5%;
 }
-
 header {
     background-image: url("../img/netlix-land-page.jpg");
-    background-color: black;
-    padding-bottom: 1px;
+    height: 100vh;
 }
 
-a {
-    font-size:5rem;
-    font-weight: bolder;
+/* Nav bar */
+.title-nav {
+    font-size:3rem;
+    font-weight:300px;
     color: #fe0000;
+    
 }
-
-ul,
+.navContainer ul,
 .nav-right {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    
 }
 
-ul {
-    padding: 15px 30px 0 50px;
+.navContainer ul {
+    padding: 0 200px;
 }
-
-.lang {
-    margin: 0 10px;
-}
-
 select {
     width: 100px;
-    height: 30px;
+    height: 35px;
     background-color:rgba(0, 0, 0, .5);
     border-color:rgb(255, 255 , 255);
     color: rgb(255, 255, 255);
@@ -53,127 +45,292 @@ select {
     border-radius: 5px;
     
 }
-
 option {
     background: rgba(244, 244, 244, 0.5);
     color: rgb(0, 0, 0);
 }
-
 .signIn {
-    width: 65px;
-    height: 30px;
-    background-color: #C11119;
+    width: 75px;
+    height: 35px;
+    background-color:#fe0000;
     color:white;
+    border-style: none;
     border-radius: 5px;
+    margin: 0 0 0 20px;
+    font-size: 1rem;
 
 }
- .signIn:hover,
- .submit-btn:hover {
+.signIn:hover,
+.submit-btn:hover {
     cursor: pointer;
     background-color: rgb(111, 29, 29);
- }
-
-
-.main-container {
-    margin: 350px 0 300px 350px;
 }
 
-.title {
-    color: white;
-    padding: 10px 0 0 0;
-    font-size: 5rem;
-    font-weight: bold;
-}
-
-.pricephrase {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
+/* main container / email */
 .membership {
-    margin: 40px 0 0 0;
-}
+    text-align: center;
+    margin: 200px 0 60px 0;
 
-.membership > h2 {
-    color:rgb(255, 255, 255);
 }
-
-#email {
-    width: 395px;
+.title {
+    font-size: 3.3rem;
+    font-weight:300px;
+}
+.membership h2 {
+    font-size: 1.2rem;
+}
+.email {
+    width: 400px;
     height:50px;
-    background-color:rgba(0, 0, 0, 0.5);
-    border-color:rgb(255, 255 , 255);
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
-    border-width: 2px;
+    border: .5px solid white;
+    background-color:rgb(0, 0, 0);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    opacity: .8;
+    margin-right: 5px;
 }
-
 .submit-btn {
     width: 200px;
     height:50px;
     border-radius: 5px;
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: #C11119;
+    border-style: none;
+    font-size: 1.3rem;
+    background-color:#fe0000;
     color:white;
 }
-
+/* Plan- container */ 
 .containerPlans {
-    margin: 0 0 0 350px;
-}
-
-.plans {
-    display: flex;
-}
-
-
-.planText {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.3em;
-}
-
-
-.basic,
-.standard,
-.premium {
-    color: white;
-    background: linear-gradient( to bottom, rgb(103, 23, 55), rgb(34, 25, 27));
-    border-radius: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 50px 30px;
-    margin: 0 20px 0 0;
-}
-
-.movies {
-    margin: 0 0 0 20px;
-}
-
-.containerShows {
-    margin: 75px 0 0 350px;
-}
-
-.listBox {
     display:flex;
-    justify-content:left;
-    margin: 30px 0 0 0;
+    justify-content: center;
+    border-radius: 4px;
+    background:radial-gradient(
+        51.39% 511.66% at 47.68% -217.91%,
+        #ff9900 0%,
+        #e50914 17.27%,
+        #0e1b4f 79.44%,
+        #000413 100%
+    );
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    margin: 0 74px;
+    margin-top: -50px;
+    padding: 32px; 
+    height: 140px;
+}
+.containerPlans ul{
+    display: block;
+    padding: 0; 
+}
+.containerPlans a {
+    text-decoration: underline;
+    color: rgb(86, 86, 222);
 }
 
-.list {
+.containerPlans h2,
+.containerPlans a {
+    font-size: 1.1rem;
+}
+
+.advertise-container {
+    border-top: 8px solid rgb(255, 255, 255, .06);
+
+}
+.download-advertise-container {
+    border-top: 8px solid rgb(255, 255, 255, .06);
+    border-bottom: 8px solid rgb(255, 255, 255, .06);
+}
+.enjoy-advertise-container {
+    margin-top: 75px;
+}
+.advertise { 
     display: flex;
-    justify-content: space-around;
-    width: 1000px;
+    justify-content: center;
+    margin: 0 200px;
+}
+.advertise-container div,
+.enjoy-advertise-container div,
+.download-advertise-container div {
+    width: 1300px;
+}
+.advertise div h2 {
+    font-size: 3.1rem;
+}
+.advertise div p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 100px;
+}
+/* Questions */
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border-bottom: 8px solid rgb(255, 255, 255, .06);
+}
+.questions {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    font-size: 1rem;
+    margin: -20px;
+    padding: 1rem;
+
+
+}
+.question-text {
+    font-size: 3rem;
+    text-align: center;
+}
+.questions:hover {
+    background-color: rgb(92, 92, 92, .9);
+}
+.questions svg {
+    transition: transform .6s ease-in;
+}
+.faq{
+    max-width: 1000px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.faq.active .answer {
+    max-height: 700px;
+    animation: fade 1s ease-in-out;
+}
+.faq.active svg {
+    transform: rotate(180deg);
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease; 
+    background-color: rgba(0, 0, 0, 0.01);
+    
+}
+.answer p{
+    line-height: 1.6;
+    font-size: 1.4rem;
 }
 
-.shows {
-    color: rgb(255, 252, 252);
+
+@keyframes  fade {
+    from {
+        opacity: 0;
+        transform: translate(-10px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+.getStarted {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 200px;
+    margin-bottom: 80px;;
 }
 
-.show-btn {
-    border-radius: 20px;
-    background: black;
-}
 
+/* Links */
+.link-container {
+    margin: 0 100px;
+    margin-top: 80px;
+}
+.link-container ul {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.link-container a {
+    color:rgb(88, 88, 88);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.link-container li {
+    font-size: 1.2rem;
+}
+/* Sign In form */
+.title-nav2 {
+    font-size:3rem;
+    font-weight:300px;
+    color: #fe0000;
+}
+.form-container {
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    background:rgb(0, 0, 0, .899);
+    width: 400px;
+    height: 600px;
+    padding-top: 40px;
+}
+.form-container h2 {
+    padding-right: 150px;
+    font-size: 2rem;
+}
+.form-email,
+.password-form {
+    margin: 8px;
+    background-color:rgba(40, 40, 40, 0.9);
+    font-size: 1rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    height: px;
+    width: 300px;
+    padding: 20px;
+    border-style: none;
+}
+.signinForm {
+    margin-top: 20px;
+    height: 55px;
+    width: 300px;
+    background-color: #fe0000;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+.rememberMe-form {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.checklist,
+.need-help {
+    color: rgb(170, 170, 170, .5);
+    font-size: .9rem;
+}
+.checklist{
+    padding: 10px 80px 0 0;
+}
+.more {
+    display: flex;
+    flex-direction: column;
+}
+.more li {
+    color: rgb(170, 170, 170, .5);
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.sign-up-now {
+    color: rgb(255, 255, 255);
+}
+.learn-more {
+    color:blue;
+}
+.sign-up-now:hover,
+.learn-more:hover {
+    text-decoration: underline;
+}
