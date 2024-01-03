@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font-family:'Times New Roman', Times, serif;
+    font-family:sans-serif;
 }
 body {
     background: rgb(0, 0, 0);
@@ -15,6 +15,7 @@ body {
 header {
     background-image: url("../img/netlix-land-page.jpg");
     height: 100vh;
+    
 }
 
 /* Nav bar */
