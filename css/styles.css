@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family:sans-serif;
 }
+
 body {
     background: rgb(0, 0, 0);
     color:white;
@@ -15,7 +16,7 @@ body {
 header {
     background-image: url("../img/netlix-land-page.jpg");
     height: 100vh;
-    
+    min-width: 1000px;
 }
 
 /* Nav bar */
